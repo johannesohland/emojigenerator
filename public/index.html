@@ -21,30 +21,32 @@
 
 </head>
 <body>
+  <!--Login screen START-->
   <div id="loginArea">
     <h1 class="title">Emoji generator</h1>
     <button class="actionButton" onclick="signIn()">Google sign in</button>
   </div>
-<main hidden id="mainTag">
-  <h1 class="title">Emoji generator</h1>
-  <h2 id="nameTitle"></h2>
-  <div id="mainArea">
-    <div id="mainDiv">
+  <!--Login screen END-->
+  <!--App screen START-->
+  <main hidden id="mainTag">
+    <h1 class="title">Emoji generator</h1>
+    <h2 id="nameTitle"></h2>
+    <div id="mainArea"><!--Main area, this is where the drawing grid is generated to-->
+      <div id="mainDiv">
+      </div>
     </div>
-  </div>
-  <div style="text-align:center;">
-    <input type="button" value="Clear" class="actionButton" onclick="clearPixels()">
-    <input type="button" value="Save" class="actionButton" onclick="saveEmoji()">
-  </div>
-  <div class="separator">
+    <div style="text-align:center;"><!--Area for the action buttons-->
+      <input type="button" value="Clear" class="actionButton" onclick="clearPixels()">
+      <input type="button" value="Save" class="actionButton" onclick="saveEmoji()">
+    </div>
+    <div class="separator"><!--Simple separator (line after the buttons)-->
+    </div>
 
-  </div>
-
-  <h2 id="savedTitle">Previously drawn by you</h1>
-  <div id="savedArea">
-      
-  </div>
-</main>
+    <h2 id="savedTitle">Previously drawn by you</h1>
+    <div id="savedArea"><!--Area for the saved emojis, this is where the small grids are generated to-->
+    </div>
+  </main>
+<!--App screen END-->
     <script src="./js/app.js"></script>
   </body>
 

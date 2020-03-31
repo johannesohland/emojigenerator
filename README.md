@@ -16,3 +16,5 @@ App files:
 -index.html (the main and only HTML page)
 -app.js
 -main.css (styling)
+
+For more details read the index.html and app.js comments

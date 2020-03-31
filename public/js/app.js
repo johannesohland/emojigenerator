@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", event => {
-    
-})
-
-
 // Function for signing in with google authentication
 function signIn(){
     const provider = new firebase.auth.GoogleAuthProvider();
@@ -119,7 +114,7 @@ function checkIfEmpty(arr){
     return false;
 }
 
-// Takes the currently active pixels array and pushes it into the database collection
+// Takes the currently active pixels array and pushes it into the user's database collection (if it doesn't exist one is created)
 function saveEmoji(){
     // Checks if the array is only one value, if so there is an error
     if(checkIfEmpty(pixels)){
@@ -141,7 +136,7 @@ function showData(d){
     $(generateSmallGrid(row,col,d.data())).appendTo("#savedArea")
 }
 
-// Gets the saved emojis from the database and passes them to the showData function
+// Gets the saved emojis from the user's collection and passes them to the showData function
 function getSaved(userEmail){
     const db = firebase.firestore();
     db.collection(userEmail).get().then((snapshot) => {
