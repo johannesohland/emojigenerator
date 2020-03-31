@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emoji generator</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.12.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.12.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.12.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.12.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.12.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/7.12.0/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+</head>
+<body>
+  <div id="loginArea">
+    <h1 class="title">Emoji generator</h1>
+    <button class="actionButton" onclick="signIn()">Google sign in</button>
+  </div>
+<main hidden id="mainTag">
+  <h1 class="title">Emoji generator</h1>
+  <h2 id="nameTitle"></h2>
+  <div id="mainArea">
+    <div id="mainDiv">
+    </div>
+  </div>
+  <div style="text-align:center;">
+    <input type="button" value="Clear" class="actionButton" onclick="clearPixels()">
+    <input type="button" value="Save" class="actionButton" onclick="saveEmoji()">
+  </div>
+  <div class="separator">
+
+  </div>
+
+  <h2 id="savedTitle">Previously drawn by you</h1>
+  <div id="savedArea">
+      
+  </div>
+</main>
+    <script src="./js/app.js"></script>
+  </body>
+
+</html>

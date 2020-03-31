@@ -1,0 +1,151 @@
+body{
+    width:100vw;
+    margin:0;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#4E4E50;
+}
+
+.title{
+    text-shadow: 1.5px 1.5px 1.5px black;
+    color:#C3073F;
+    font-size:38px;
+}
+
+#nameTitle{
+    text-shadow: 1.5px 1.5px 1.5px black;
+    color:#C3073F;
+    font-size:30px;
+}
+
+#savedTitle{
+    color:#C3073F;
+    font-size:22px;
+    text-shadow: 1.5px 1.5px 1.5px black;
+}
+.square1{
+    border:1px solid #000;
+    background:#1A1A1D;
+    height:50px;
+    width:50px;
+    text-align:center;
+    transition:.2s;
+}
+
+.square2{
+    border:1px solid #000;
+    background:#C3073F;
+    height:50px;
+    width:50px;
+    text-align:center;
+    transition:.2s;
+}
+
+
+.square1:hover{
+    transform:scale(1.05);
+}
+
+.square2:hover{
+    transform:scale(1.05);
+}
+
+.smallSquare1{
+    border:1px solid #000;
+    background:#1A1A1D;
+    height:25px;
+    min-width:25px!important;
+    text-align:center;
+}
+
+.smallSquare2{
+    border:1px solid #000;
+    background:#C3073F;
+    height:25px;
+    min-width:25px!important;
+    text-align:center;
+}
+.separator{
+    width:80vw;
+    border-bottom:1px solid black;
+    margin:40px 0px 20px 0px;
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+}
+
+.savedEm{
+    display:flex;
+    width:20vw;
+    margin:2.5%;
+}
+
+#mainArea{
+    height:60vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.actionButton{
+    min-width:150px;
+    min-height:50px;
+    background-color:#6F2232;
+    font-size:16px;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    outline:0;
+    border:none;
+    box-shadow:2px 2px 2px black;
+    
+    
+}
+
+.actionButton:hover{
+    background-color:#C3073F;
+}
+
+.actionButton:active{
+    background-color:#6F2232;
+}
+
+#savedArea{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    text-align:center;
+}
+
+#savedArea table{
+    margin:20px;
+}
+
+#loginArea{
+    margin-top:25%;
+
+}
+
+#signInBtn{
+    background-color:blue;
+    color:white;
+    box-shadow:1.5px 1.5px 1.5px black;
+    height:50px;
+    width:150px;
+    outline:0;
+    border:0;
+}
+
+#signInBtn:hover{
+    background-color:#000055;
+}
+
+#signInBtn:active{
+    background-color:blue;
+}
