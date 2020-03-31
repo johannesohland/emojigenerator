@@ -6,6 +6,8 @@ To use the app go to https://emojigenerator-5b09d.firebaseapp.com/ and sign in w
 Once you've drawn an emoji you like you can save it in the app and it will be bound to your google account.
 The app also features an instant eraser that clears the whole 8x8 grid.
 
+In the Firestore database every signed in google account gets its own collection where their emojis will be stored.
+
 The project utilizes:
 -Firebase (Hosting, Firestore)
 -NodeJS

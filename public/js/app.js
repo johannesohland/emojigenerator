@@ -123,7 +123,7 @@ function saveEmoji(){
     } else {
         const db = firebase.firestore();
         db.collection(currentUser).add({
-            data:pixels
+            data:pixels // The data is stored in the user's collection with a randomly generated ID with a single field that is an array
         })
         $("#savedArea").html($("#savedArea").html() + generateSmallGrid(row,col,pixels));
         clearPixels();
